@@ -1,0 +1,21 @@
+/* Import our custom theme variables FIRST */
+@import './theme.css';
+
+/* THEN, import Tailwind's core styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  ENTERPRISE BEST PRACTICE:
+  Instead of using @apply with CSS-variable-based colors (which can cause build issues),
+  we apply the variables directly to the body. This is the correct and most efficient
+  way to set up a dynamic, themeable base style for the entire application.
+*/
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
