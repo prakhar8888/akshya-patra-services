@@ -1,0 +1,191 @@
+--- Backend Diagnostics Start ---
+Backend root: C:\Dev\Akshya-Patra-Services-Final\akshya-patra-services\backend
+Running checks on: C:\Dev\Akshya-Patra-Services-Final\akshya-patra-services\backend\src
+
+Found: src/routes
+Found: src/controllers
+Found: src/models
+Found: src/middleware
+
+Checking 18 route files under src/routes...
+
+→ Checking route: src\routes\activityLogRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\admin\approvals.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\admin\delegations.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\admin\escalations.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\admin\exports.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\authRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\callLogRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\candidateRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\dailyReportRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\dashboardRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\designationRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\emailLogRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\jobRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\noteRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\pusherRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\sectorRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\settingsRoutes.js
+  imported OK — exports: default
+
+→ Checking route: src\routes\userRoutes.js
+  imported OK — exports: default
+
+Checking 18 controller files under src/controllers...
+
+→ Controller: src\controllers\activityLogController.js
+  exports: getAllActivityLogs
+
+→ Controller: src\controllers\admin\approvalController.js
+  exports: getApprovalTicketById, getPendingApprovals, updateApprovalStatus
+
+→ Controller: src\controllers\admin\delegationController.js
+  exports: createDelegation, getActiveDelegations, revokeDelegation
+
+→ Controller: src\controllers\admin\escalationController.js
+  exports: createEscalationTicket, getAllEscalationTickets
+
+→ Controller: src\controllers\admin\exportController.js
+  exports: getAllExportJobs, requestExport
+
+→ Controller: src\controllers\authController.js
+  exports: getMe, googleAuthSuccess, loginUser, registerUser
+
+→ Controller: src\controllers\callLogController.js
+  exports: createCallLog, getCallLogsForCandidate
+
+→ Controller: src\controllers\candidateController.js
+  exports: createCandidate, createCandidateFromHR, getAllCandidates, getCandidateById, getReviewQueueCandidates, updateCandidateStatus
+
+→ Controller: src\controllers\dailyReportController.js
+  exports: getAllDailyReports, submitDailyReport, updateReportStatus
+
+→ Controller: src\controllers\dashboardController.js
+  exports: getDashboardStats
+
+→ Controller: src\controllers\designationController.js
+  exports: createDesignation, getAllDesignations
+
+→ Controller: src\controllers\emailLogController.js
+  exports: getEmailLogsForCandidate, sendAndLogEmail
+
+→ Controller: src\controllers\jobController.js
+  exports: createJob, deleteJob, getAllJobs, getJobsForAdmin, updateJob
+
+→ Controller: src\controllers\noteController.js
+  exports: createNote, getNotesForCandidate
+
+→ Controller: src\controllers\pusherController.js
+  exports: authenticateUser
+
+→ Controller: src\controllers\sectorController.js
+  exports: createSector, getAllSectors
+
+→ Controller: src\controllers\settingsController.js
+  exports: getSettings, updateSettings
+
+→ Controller: src\controllers\userController.js
+  exports: approveUser, deleteUser, getAllUsers, getHrUsers, rejectUser, updateUser
+
+Checking 17 model files under src/models...
+
+→ Model: src\models\ActivityLog.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\AdminConfig.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\ApprovalTicket.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\CallLog.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Candidate.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\DailyReport.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Delegation.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Designation.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\EmailLog.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\EscalationTicket.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\ExportJob.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Job.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Note.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Sector.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\Settings.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\User.js
+  OK: default export found (model exported as default).
+
+→ Model: src\models\UserPreferences.js
+  OK: default export found (model exported as default).
+
+Checking 4 middleware files under src/middleware...
+
+→ Middleware: src\middleware\approvalGate.js
+  exports: default
+
+→ Middleware: src\middleware\authMiddleware.js
+  exports: admin, hrManager, protect, recruiter, superAdmin
+
+→ Middleware: src\middleware\errorMiddleware.js
+  exports: errorHandler, notFound
+
+→ Middleware: src\middleware\rbac.js
+  exports: ROLES, admin, superAdmin
+
+Admin routes present: approvals.js, delegations.js, escalations.js, exports.js
+
+--- Diagnostics completed. Writing report...
